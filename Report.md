@@ -1,6 +1,6 @@
-Name:
+Name: Kerry Tu
 
-EID:
+EID: kt25566
 
 Team Number:
 
@@ -61,7 +61,7 @@ Team Number:
 ## Screenshots
 
 Procedure A, step 1:
-![Put path to your image here ->](img/placeholder.png)
+![Put path to your image here ->](img/Procedure A Screenshot 1.png)
 
 Procedure A, step 4:
 ![Put path to your image here ->](img/placeholder.png)
