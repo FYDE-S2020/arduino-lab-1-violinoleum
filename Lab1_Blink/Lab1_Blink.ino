@@ -12,9 +12,22 @@ void timedBlink(int interval){
   delay(interval);                       // wait for a second
 }
 
+
+void dimmer(int freq, int duty) {
+  int period, onTime, offTime;
+  period = 1000/freq;
+  onTime = period * duty / 100;
+  offTime = period - onTime;
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(onTime);
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(offTime);
+}
+
 void loop() {
   // put your main code here, to run repeatedly:
-  timedBlink(250);
-  timedBlink(500);
-  timedBlink(1000);
+  for(int x=100;x>0;x--)
+    dimmer(30,x);
+  for(int x=0;x<100;x++)
+    dimmer(30,x);
 }
